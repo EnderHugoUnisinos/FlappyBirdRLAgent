@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "ClGAjRdvXuY=",
+  "success": true,
+  "projectFilePath": "/home/ender/GIT/FlappyBirdRLAgent/aprendizado maquina.csproj",
+  "expectedPackageFiles": [
+    "/home/ender/.nuget/packages/godot.sourcegenerators/4.6.2/godot.sourcegenerators.4.6.2.nupkg.sha512",
+    "/home/ender/.nuget/packages/godotsharp/4.6.2/godotsharp.4.6.2.nupkg.sha512",
+    "/home/ender/.nuget/packages/microsoft.ml.onnxruntime/1.27.0/microsoft.ml.onnxruntime.1.27.0.nupkg.sha512",
+    "/home/ender/.nuget/packages/microsoft.ml.onnxruntime.managed/1.27.0/microsoft.ml.onnxruntime.managed.1.27.0.nupkg.sha512",
+    "/home/ender/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/ender/.nuget/packages/system.numerics.tensors/9.0.0/system.numerics.tensors.9.0.0.nupkg.sha512",
+    "/home/ender/.nuget/packages/microsoft.netcore.app.runtime.win-x64/8.0.28/microsoft.netcore.app.runtime.win-x64.8.0.28.nupkg.sha512",
+    "/home/ender/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/8.0.28/microsoft.aspnetcore.app.runtime.win-x64.8.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
