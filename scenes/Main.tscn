@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c6utja38eu2li"]
+
+[ext_resource type="PackedScene" uid="uid://dr03r77vhqslh" path="res://scenes/Bird.tscn" id="1_elqb8"]
+[ext_resource type="Script" uid="uid://eirc6p574hsh" path="res://scripts/Main.gd" id="1_rarhs"]
+[ext_resource type="Script" uid="uid://cwjrysw4842mt" path="res://addons/godot_rl_agents/sync.gd" id="2_rvslj"]
+[ext_resource type="Script" uid="uid://dt7jats5nhc5b" path="res://scripts/FlappyAIController.gd" id="3_0bbpv"]
+
+[node name="Main" type="Node2D" unique_id=861100486]
+script = ExtResource("1_rarhs")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=290056446]
+offset_right = 1156.0
+offset_bottom = 648.0
+color = Color(0.5921569, 1, 1, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=604004975]
+offset_left = -9.0
+offset_top = 608.0
+offset_right = 1156.0
+offset_bottom = 649.0
+color = Color(0.45490196, 0.8392157, 0.45490196, 1)
+
+[node name="Bird" parent="." unique_id=1026258566 instance=ExtResource("1_elqb8")]
+position = Vector2(167, 366)
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=5847347]
+wait_time = 1.5
+
+[node name="Sync" type="Node" parent="." unique_id=1104289267]
+script = ExtResource("2_rvslj")
+action_repeat = 1
+metadata/_custom_type_script = "uid://cwjrysw4842mt"
+
+[node name="AIController2D" type="Node2D" parent="." unique_id=431297185]
+script = ExtResource("3_0bbpv")
+metadata/_custom_type_script = "uid://c2yfgqgtte6jq"
+
+[node name="Score" type="Label" parent="." unique_id=273193861]
+top_level = true
+offset_right = 1150.0
+offset_bottom = 88.0
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 6
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore" type="Label" parent="." unique_id=1991013185]
+top_level = true
+offset_left = 17.0
+offset_top = 18.0
+offset_right = 100.0
+offset_bottom = 41.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.09411765)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 5
+text = "0"

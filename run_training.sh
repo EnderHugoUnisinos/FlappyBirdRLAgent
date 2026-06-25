@@ -1,0 +1,11 @@
+python3 stable_baselines3_flappybird.py \
+    --env_path ./build/Flappy.x86_64 \
+    --experiment_dir logs/flappy \
+    --experiment_name ppo_final_run \
+    --timesteps 2000000 \
+    --save_checkpoint_frequency 25000 \
+    --n_steps 256 \
+    --batch_size 128 \
+    --n_parallel 4 \
+    --viz \
+    --save_model_path models/flappy_ppo_final

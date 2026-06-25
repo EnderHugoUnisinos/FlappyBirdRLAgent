@@ -1,0 +1,14 @@
+
+Estrutura de cenas:
+
+[MAIN]
+    | Contém o personagem principal 
+    | 
+
+[PIPEPAIR]
+    | Contém canos e area segura (gap)
+    |
+
+[BIRD]
+    | Contém o personagem principal
+    |

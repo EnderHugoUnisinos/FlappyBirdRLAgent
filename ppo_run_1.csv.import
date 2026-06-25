@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cnluys3l3xfu0"
+
+[deps]
+
+files=["res://ppo_run_1.Step.translation", "res://ppo_run_1.Value.translation"]
+
+source_file="res://ppo_run_1.csv"
+dest_files=["res://ppo_run_1.Step.translation", "res://ppo_run_1.Value.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

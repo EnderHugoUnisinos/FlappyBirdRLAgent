@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b70ad65hjf25p"]
+
+[ext_resource type="Script" uid="uid://c0qmordcgh46g" path="res://scripts/PipePair.gd" id="1_5o3v1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5o3v1"]
+size = Vector2(80, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0omv6"]
+size = Vector2(80, 500)
+
+[node name="Pipe" type="Node2D" unique_id=693666296 groups=["pipes"]]
+script = ExtResource("1_5o3v1")
+
+[node name="ScoreArea" type="Area2D" parent="." unique_id=326129776]
+position = Vector2(80, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea" unique_id=1201743673]
+shape = SubResource("RectangleShape2D_5o3v1")
+
+[node name="TopPipe" type="StaticBody2D" parent="." unique_id=1425733827]
+
+[node name="ColorRect" type="ColorRect" parent="TopPipe" unique_id=1549484814]
+offset_left = -40.0
+offset_top = -250.0
+offset_right = 40.0
+offset_bottom = 250.0
+color = Color(0.20940489, 0.6096228, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe" unique_id=1407449777]
+shape = SubResource("RectangleShape2D_0omv6")
+
+[node name="BottomPipe" type="StaticBody2D" parent="." unique_id=1351557096]
+
+[node name="ColorRect" type="ColorRect" parent="BottomPipe" unique_id=2059440423]
+offset_left = -40.0
+offset_top = -250.0
+offset_right = 40.0
+offset_bottom = 250.0
+color = Color(0.20940489, 0.6096228, 0, 1)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BottomPipe" unique_id=496148570]
+shape = SubResource("RectangleShape2D_0omv6")

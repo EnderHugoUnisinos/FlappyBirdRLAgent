@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dr03r77vhqslh"]
+
+[ext_resource type="Script" uid="uid://dghpeaxgcgbp4" path="res://scripts/Bird.gd" id="1_o5jjt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2t3dg"]
+size = Vector2(40, 40)
+
+[node name="Bird" type="CharacterBody2D" unique_id=1026258566]
+script = ExtResource("1_o5jjt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1887907308]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1891829155]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_2t3dg")
